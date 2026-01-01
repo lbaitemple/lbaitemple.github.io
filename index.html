@@ -153,7 +153,7 @@
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
               <h2>Hi, I'm <span class="teal">Dr. Li Bai.</span></h2>
-              <h5 style="color:#fff"><span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <h5 style="color:#fff"><span class="typing" style="font-weight: 300;"></span></h5>
               <h5>Associate Dean for Research, Graduate Studies & Faculty Affairs at Temple University's College of Engineering. Leading research in computer security, robotics, and multi-agent systems.</h5>
             </div>
             <div class="social">
@@ -538,7 +538,8 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["A Researcher", "An Educator", "An IEEE Leader", "An Innovator"],
+      strings: ["A <span style='color:#004d40'>Researcher</span>", "An <span style='color:#004d40'>Educator</span>", "An <span style='color:#004d40'>IEEE Leader</span>", "An <span style='color:#004d40'>Innovator</span>"],
+      contentType: 'html',
       loop: true,
       typeSpeed: 80,
       backSpeed: 40
